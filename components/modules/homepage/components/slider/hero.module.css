@@ -1,0 +1,26 @@
+.stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 100px;
+    padding: 0 1rem;
+    font-size: clamp(1.5rem, 1.5vw, 3rem);
+    line-height: 1.5rem;
+    margin-top: 2rem;
+    gap: 10px;
+    text-align: center;
+}
+
+.stat > span {
+    height: 30px;
+    font-size: clamp(2.5rem, 1.5vw, 3rem);
+    font-weight: 900;
+    line-height: 10px;
+    color: #1c1c1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1109" height="326" fill="none" viewBox="0 0 1109 326">
+  <path stroke="#1F1F1F" stroke-linecap="round" stroke-width="10"
+    d="M1.662 323.597c13.696-1.688 26.577-5.479 39.894-9.276 88.851-25.331 176.536-54.654 264.762-82.028C568.892 150.827 834.388 79.155 1099.01 4.74m3.39-2.59c-9.82 3.798-21.06 3.432-31.41 4.415-33.12 3.146-66.16 4.291-99.429 4.464-64.847.337-129.592-4.792-194.373-4.456" />
+  <path stroke="#1F1F1F" stroke-linecap="round" stroke-width="10"
+    d="M1101.99 2.153c-5.42 9.02-14.52 15.632-22.09 22.755-24.23 22.805-49.61 43.978-75.78 64.528-51 40.053-105.273 75.725-156.222 115.736" />
+
+  <style>
+    path {
+      animation: leftAndRight 2s linear alternate infinite;
+    }
+
+    @keyframes leftAndRight {
+      from {
+        transform: translateX(0px);
+      }
+
+      to {
+        transform: translateX(-100px);
+      }
+    }
+  </style>
+
+</svg>

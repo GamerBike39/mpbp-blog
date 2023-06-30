@@ -1,0 +1,77 @@
+const pisteContent = [
+    {   
+        id: 1,
+        name: "Fast'oche",
+        color: "green",
+        desc : "La Fast'oche, c'est rapide et facile ! Découvrez notre piste verte, idéale pour les débutants, et fun pour les plus expérimentés. Une piste qui vous fera découvrir les joies du VTT de descente !",
+        denivele : "380 m",
+        longueur : "3.5 km",
+        videoUrl : <iframe  src="https://www.youtube.com/embed/hWx9z5Nqbik" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+    },
+    {
+        id: 2,
+        name: "Camomille",
+        color: "blue",
+        desc : "Piste naturelle, racines, pierres et virages relevés pour un savant mélange de technique et de vitesse. Idéal pour s'amuser, les débutants arriveront à descendre à leur ryhtme et les plus expérimentés pourront défier leur kom 😎",
+        denivele : "370 m",
+        longueur : "2.7 km",
+        videoUrl : <iframe  src="https://www.youtube.com/embed/hWx9z5Nqbik" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+    },
+    
+    {
+        id: 3,
+        name: "Hip hop",
+        color: "red",
+        desc : "Peut-être la piste la plus fun du bike park, 1ère piste historique, elle a le flow de ton meilleur rappeur et t'envoie du lourd du début jusqu'en bas ! Des passages raides, des sauts, des virages relevés, et ses deux variantes ( rouge et noire ). Et une fois en bas, une seule envie activer le mode 'en boucle' dans ta playPiste ! ",
+        denivele : "349m",
+        longueur : "2.1 km",
+        videoUrl : <iframe src="https://www.youtube.com/embed/uFTp9_Tlg24" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+    },
+    {
+        id: 4,
+        name: "La spé du patron",
+        color: "red",
+        desc : "Une spéciale qui porte bien son nom, avec un dual slalom en milieu de parcours. Qui sera le vrai patron ? Dans cette piste, virages relevés, sauts, et passages techniques ainsi qu'une toute nouvelle variante la Rolling Stones ! Des virages en pierres dans une pente à 40°, qu'attends tu ?",
+        denivele : "340 m",
+        longueur : "2.2 km",
+        videoUrl : <iframe src="https://www.youtube.com/embed/d4yCeAJbsQk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+    },
+    {
+        id: 5,
+        name: "FonceMonga",
+        color: "red",
+        desc : "Piste d'enduro par execellence, relance, passages techniques, la bonne trajectoire sera primpordiale ! Positionner ses roues correctement n'a jamais été aussi important pour aller vite ! De nombreux virages, techniques et en épingles pour défier vos capacités de pilotage !",
+        denivele : "358 m",
+        longueur : "2.4 km",
+        videoUrl : <iframe src="https://www.youtube.com/embed/Tz3-WLTgaMM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+    },
+    {
+        id: 6,
+        name: "Grand Canyon",
+        color: "red",
+        desc : "On est au Canada ? Ah non c'est bien le Mont Poupet, la grand canyon est une piste qui joue beaucoup avec le relief du terrain, petit bonus, une grosse dalle de pierre bien raide, avec multi passages possibles ! Plonger dans les profondeurs de cette piste et survoler les trous avec les nombreux sauts que ce soit des tables ou des doubles selon votre niveau !",
+        denivele : "340 m",
+        longueur : "2.4 km",
+        videoUrl : <iframe width="560" height="315" src="https://www.youtube.com/embed/oZeIktBQ3_A" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+    },
+    {
+        id: 7,
+        name: "Zoizo Bob",
+        color: "black",
+        desc : "Tu aimes le freeride ? Piste crée à la base sans aucun shape, droit dans la pente, ou presque... Avec le temps quelques aménagements ont fait leur apparition, une variante DH, du gros raide, du technique. De quoi te challenger et te faire plaisir !",
+        denivele : "340 m",
+        longueur : "1.7 km",
+        videoUrl : <iframe src="https://www.youtube.com/embed/uFTp9_Tlg24" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+    },
+    {
+        id: 8,
+        name: "Dead Cervicals",
+        color: "black",
+        desc : "Piste noire, elle saura vous donner des émotions, enchainer des moments 'calmes' et des moments de pures adrénalines dans la pente. Drop, skinny, virages relevés, sauts, tout y est pour vous faire plaisir !",
+        denivele : "340 m",
+        longueur : "1.7 km",
+        videoUrl : <iframe src="https://www.youtube.com/embed/uFTp9_Tlg24" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>,
+    }
+]
+
+export default pisteContent;

@@ -24,6 +24,9 @@ export const Page = defineDocumentType(() => ({
     description: {
       type: "string",
     },
+    imagePrev: {
+      type: "string",
+    }
   },
   computedFields,
 }))
@@ -44,11 +47,33 @@ export const Post = defineDocumentType(() => ({
       type: "date",
       required: true,
     },
+    imagePrev: {
+      type: "string",
+    },
+  },
+  computedFields,
+}))
+
+export const Pistes = defineDocumentType(() => ({
+  name: "Pistes",
+  filePathPattern: `pistes/**/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: {
+      type: "string",
+      required: true,
+    },
+    description: {
+      type: "string",
+    },
+    imagePrev: {
+      type: "string",
+    },
   },
   computedFields,
 }))
 
 export default makeSource({
   contentDirPath: "./content",
-  documentTypes: [Post, Page],
+  documentTypes: [Post, Page, Pistes],
 })
