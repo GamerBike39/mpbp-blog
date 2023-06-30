@@ -46,27 +46,27 @@ export  const Button = ({
 
             switch (variant) {
                 case "accent": // default
-                    variantStyles = "bg-primary hover:bg-primary-400 text-white rounded"
+                    variantStyles = "bg-red-600  hover:bg-primary-400 text-black rounded"
                     break;
                 case "secondary":
-                    variantStyles = "bg-primary-200 hover:bg-primary-300/50 text-primary rounded"
+                    variantStyles = "bg-red-200 hover:bg-primary-300/50 text-primary rounded"
                     break;
                 case "outline":
                     variantStyles = "bg-white hover:bg-gray-400/50 border border-gray-500 text-gray-900 rounded"
                     break;
                 case "succes":
-                        variantStyles = "bg-secondary-600 hover:bg-secondary-400 text-white rounded"
+                        variantStyles = "bg-red-600 hover:bg-secondary-400 text-white rounded"
                         break;
                 case "disabled":
-                    variantStyles = "bg-gray-400 border border-gray-500 text-gray-600 rounded cursor-not-allowed"
+                    variantStyles = "bg-neutral-400 border border-gray-500 text-gray-600 rounded cursor-not-allowed"
                     break;
                 case "icon":
                     if (iconTheme === "accent") {
-                        variantStyles = "bg-primary hover:bg-primary-400 text-white rounded-full"
+                        variantStyles = "bg-black hover:bg-primary-400 text-white rounded-full"
                     } else if (iconTheme === "secondary") {
-                        variantStyles = "bg-primary-200 hover:bg-primary-300/50 text-primary rounded-full"
+                        variantStyles = "bg-red-200 hover:bg-primary-300/50 text-primary rounded-full"
                     } else if (iconTheme === "gray") {
-                        variantStyles = "bg-gray-800 hover:bg-gray-700 text-white rounded-full"
+                        variantStyles = "bg-red-800 hover:bg-gray-700 text-white rounded-full"
                     }
                     break;
                
@@ -136,7 +136,7 @@ export  const Button = ({
     const buttonElement = (
         <motion.button
         type={type}
-        className={clsx(variantStyles, icoSize, sizeStyles, isLoading && 'cursor-not-allowed', 'relative', fullWidth && 'w-full')}
+        className={clsx(variantStyles, icoSize, sizeStyles, isLoading && 'cursor-not-allowed', 'relative bg-black!', fullWidth && 'w-full')}
         onClick={handleClick}
         disabled={disabled || isLoading ? true : false}
         role="button"
@@ -144,7 +144,7 @@ export  const Button = ({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         whileHover={{ scale: 1.1, type: 'spring' }}
-        exit={{ opacity: 0, transition: { duration: 0.1 } }}
+        // exit={{ opacity: 0.1, transition: { duration: 0.1 } }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
       >
         {buttonContent}

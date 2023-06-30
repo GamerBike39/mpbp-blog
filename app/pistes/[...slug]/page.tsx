@@ -52,7 +52,7 @@ export default async function PostPage({ params }: PostProps) {
 
   return (
     <>
-    <MenuPistes/>
+    <MenuPistes leftMenu={true}/>
     <article className="py-6 prose mx-auto px-6">
       <h1 className="mb-2">{post.title}</h1>
       {post.description && (

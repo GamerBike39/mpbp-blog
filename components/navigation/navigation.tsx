@@ -10,6 +10,7 @@ import { v4 as uuidv4 } from "uuid";
 import { SocialNetworksButtons } from "./social-networks-buttons";
 import { BtnAdherer } from "@/components/modules/homepage/components/info/BtnAdherer";
 import Link from "next/link";
+import DropDownMenuPistes from "./dropDown";
 
 interface Props {}
 
@@ -68,17 +69,19 @@ export const Navigation = ({}: Props) => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              onClick={toggleMobileMenu}
+              // onClick={toggleMobileMenu}
             >
               <motion.li
                initial={{ opacity: 0, y: -100 }}
                whileInView={{ opacity: 1, y:0, transition: { duration: 0.4, delay: 0.2 } }}
+               onClick={toggleMobileMenu}
               >
                  <Logo className="fill-white" size="very-large"/>
               </motion.li>
               <motion.li
                initial={{ opacity: 0, y: -100 }}
                whileInView={{ opacity: 1, y:0, transition: { duration: 0.4, delay: 0.2 } }}
+               onClick={toggleMobileMenu}
               >
                   <Link href="/" title="Accueil" className="!text-white">
                     Accueil
@@ -89,14 +92,16 @@ export const Navigation = ({}: Props) => {
                whileInView={{ opacity: 1, y:0, transition: { duration: 0.4, delay: 0.3 } }}
               >
   
-                  <Link href="/pistes" title="Plan des pistes"  className="!text-white">
+                  {/* <Link href="/pistes" title="Plan des pistes"  className="!text-white">
                     Plan des pistes
-                  </Link>
+                  </Link> */}
+                    <DropDownMenuPistes mobileMenu={true}  action={toggleMobileMenu}/>
                
                 </motion.li>
               <motion.li
                initial={{ opacity: 0, y: -100 }}
                whileInView={{ opacity: 1, y:0, transition: { duration: 0.4, delay: 0.4 } }}
+               onClick={toggleMobileMenu}
               >
                   <a href="#adhesion" title="Contact" className="!text-white">
                     Association
@@ -127,10 +132,8 @@ export const Navigation = ({}: Props) => {
         <li className="m-0">
             <Link href="/" >Accueil</Link>
         </li>
-        <li className="m-0">
-        <Link href="/pistes" title="Plan des pistes">
-          Plan des pistes
-        </Link>
+        <li>
+          <DropDownMenuPistes/>
         </li>
         <li className="m-0">
         <a href="#adhesion" className="font-bold">Adhérer</a>
@@ -138,11 +141,7 @@ export const Navigation = ({}: Props) => {
         <li className="m-0">
         <a href="#info">Infos</a>
         </li>
-        {/* <li>
-          <Typography variant="caption3" theme="gray" component="span">
-            <CustomLink href="/design" title="Points d'intérêts" />
-          </Typography>
-        </li> */}
+        
          <li className="m-0">
             <CustomLink href="/contact" title="Contact" />
         </li>

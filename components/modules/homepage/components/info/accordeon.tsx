@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { contentInfoList } from './content';
 import { Typography } from '@/ui/design-system/typography/typography';
 import { motion, AnimatePresence  } from 'framer-motion';

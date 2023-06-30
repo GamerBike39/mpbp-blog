@@ -32,9 +32,9 @@ a{
   position: relative;
 }
 
-a:hover{
+/* a:hover{
   color: rgb(102, 204, 252)!important;
-}
+} */
 
 /* p{
   font-size: 1.2rem;
