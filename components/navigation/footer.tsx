@@ -1,7 +1,6 @@
 import { Typography } from "@/ui/design-system/typography/typography"
 import { Container } from "../container/container"
 import Image from "next/image"
-import { v4 as uuidv4 } from "uuid"
 import Link from "next/link"
 
 // link
@@ -29,7 +28,7 @@ export const Footer = ({} : Props) => {
     // footer navigation list link mapping
     const FooterNavigationList = footerLinks.map((columnLinks) => {
         return (
-            <FooterLink data={columnLinks} key={uuidv4()}/>
+            <FooterLink data={columnLinks} key={columnLinks.label}/>
         )
     })
 
@@ -96,7 +95,7 @@ interface footerLinkProps {
 const FooterLink = ({data}: footerLinkProps) => {
 
     const linkList = data.links.map((link) => { return (
-        <Typography variant="caption3" theme="gray" component="li" key={uuidv4()}>
+        <Typography variant="caption3" theme="gray" component="li" key={link.label+'id'}>
         {link.type === LinkType.INTERNAL ? (
             <CustomLink href={link.baseUrl} title={link.label} className="text-white/75"/>) : (
                 <CustomLink href={link.baseUrl} target="_blank" title={link.label}  className="text-white/75"/>)}
