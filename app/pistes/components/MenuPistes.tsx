@@ -92,14 +92,14 @@ export const MenuPistesMobile = ({ className, action, closeMenu}: Props) => {
             <div key={item._id}>
               {item.slug === pathName ? (
                 <>
-                  <Link href={item.slug}>
+                  <Link href={item.slug} onClick={action}>
                     <p className="text-xl font-bold hover:scale-105 bg-neutral-800 px-5 text-white transition">{item.title}</p>
                   </Link>
                   <hr />
                 </>
               ) : (
                 <>
-                  <Link href={item.slug}>
+                  <Link href={item.slug} onClick={action}>
                     <p className="text-sm hover:scale-105 transition hover:font-extrabold hover:bg-neutral-400/40  ">{item.title}</p>
                   </Link>
                   <hr />
