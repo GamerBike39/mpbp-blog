@@ -66,6 +66,15 @@ export const Pistes = defineDocumentType(() => ({
     description: {
       type: "string",
     },
+    colorDifficulty: {
+      type: "string"
+    },
+    distance: {
+      type: "number"
+    },
+    elevation: {
+      type: "number"
+    },
     imagePrev: {
       type: "string",
     },

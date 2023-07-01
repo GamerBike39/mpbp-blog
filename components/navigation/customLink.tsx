@@ -1,6 +1,7 @@
 'use client';
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 
 interface Props {
@@ -12,7 +13,7 @@ interface Props {
 
 export const CustomLink = ({ href, title, target, className }: Props) => {
 
-  const urlPath = window.location.href;
+  const urlPath = usePathname();
 
   return (
     <Link href={href} target={target} className={`${className} relative group ${urlPath === href ? 'text-gray text-4xl font-bold scale-105' : "text-gray/70"}`}>
@@ -27,7 +28,3 @@ export const CustomLink = ({ href, title, target, className }: Props) => {
 };
 
 
-
-
-
-console.log(window.location.href);

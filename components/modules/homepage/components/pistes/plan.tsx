@@ -87,8 +87,8 @@ export const PlanPiste = () => {
                                         Facile
                                     </Typography>
                                 </div>
-                                <PanneauxPiste id={1} name="Fast'oche" color="green" size="small" fontSize="medium"/>
-                                <PanneauxPiste id={2} name="Camomille" color="blue" size="small" fontSize="medium" />
+                                <PanneauxPiste id={1} name="Fast'oche" color="green" size="small" fontSize="medium" link="/pistes/fastoche"/>
+                                <PanneauxPiste id={2} name="Camomille" color="blue" size="small" fontSize="medium" link="/pistes/camomille" />
                             </div>
                             <div className="grid col-span-1 place-content-center place-items-center">
                                 <div className="relative flex flex-col justify-center items-center mb-5">
@@ -97,10 +97,10 @@ export const PlanPiste = () => {
                                         Moyen
                                     </Typography>
                                 </div>
-                                <PanneauxPiste id={3} name="Hip hop" color="red" size="small" fontSize="medium"/>
-                                <PanneauxPiste id={4} name="La spé du patron" color="red" size="small" fontSize="medium"/>
-                                <PanneauxPiste id={5} name="FonceMonga" color="red" size="small" fontSize="medium" />
-                                <PanneauxPiste id={6} name="Grand Canyon" color="red" size="small" fontSize="medium" />
+                                <PanneauxPiste id={3} name="Hip hop" color="red" size="small" fontSize="medium" link="/pistes/hip-hop"/>
+                                <PanneauxPiste id={4} name="La spé du patron" color="red" size="small" fontSize="medium" link="/pistes/la-spe-du-patron"/>
+                                <PanneauxPiste id={5} name="FonceMonga" color="red" size="small" fontSize="medium" link="/pistes/foncemonga"/>
+                                <PanneauxPiste id={6} name="Grand Canyon" color="red" size="small" fontSize="medium" link="/pistes/grand-canyon"/>
                             </div>
                             <div className="grid col-span-1 place-content-center place-items-center">
                                 <div className="relative flex flex-col justify-center items-center mb-5">
@@ -109,8 +109,8 @@ export const PlanPiste = () => {
                                         Difficile
                                     </Typography>
                                 </div>
-                                <PanneauxPiste id={7} name="Zoizo Bob" color="black" size="small" fontSize="medium"/>
-                                <PanneauxPiste id={8} name="Dead Cervicals" color="black" size="small" fontSize="medium" />
+                                <PanneauxPiste id={7} name="Zoizo Bob" color="black" size="small" fontSize="medium" link="/pistes/zoizo-bob"/>
+                                <PanneauxPiste id={8} name="Dead Cervicals" color="black" size="small" fontSize="medium" link="/pistes/dead-cervicals" />
                             </div>
                             <Typography variant="caption4" component="p" theme="gray" className="text-right col-span-3 w-full font-light mt-10 px-2">
                            Cliquer sur les panneaux pour découvrir les pistes.

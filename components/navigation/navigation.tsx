@@ -158,7 +158,7 @@ export const Navigation = ({}: Props) => {
             <div
               className={clsx(
                 isMobileMenuOpen
-                  ? "z-50 fixed right-6 top-4"
+                  ? "z-[35] fixed right-6 top-4"
                   : "md:hidden flex ml-auto mr-5 mt-2 bg-white/75 rounded"
               )}
             >
