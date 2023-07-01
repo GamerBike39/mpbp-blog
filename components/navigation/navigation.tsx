@@ -6,7 +6,6 @@ import { CustomLink } from "./customLink";
 import { Spin as Hamburger } from "hamburger-react";
 import clsx from "clsx";
 import { motion, AnimatePresence } from "framer-motion";
-import { v4 as uuidv4 } from "uuid";
 import { SocialNetworksButtons } from "./social-networks-buttons";
 import { BtnAdherer } from "@/components/modules/homepage/components/info/BtnAdherer";
 import Link from "next/link";
@@ -52,7 +51,7 @@ export const Navigation = ({}: Props) => {
     return (
           <motion.div
             className="fixed inset-0 h-full w-full bg-neutral-900 z-30 flex justify-center items-center md:hidden"
-            key={uuidv4()}
+            
             animate={isMobileMenuOpen ? "open" : "closed"}
             initial="closed"
             exit="closed"
@@ -64,7 +63,7 @@ export const Navigation = ({}: Props) => {
             </div>
 
             <motion.ul
-              key={uuidv4()}
+            
               className={`md:hidden flex items-center gap-7 flex-col`}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
