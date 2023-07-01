@@ -1,6 +1,5 @@
 import { Button } from "@/ui/design-system/button/button";
 import { footerSocialLinks } from "./appLinks";
-import { v4 as uuidv4 } from "uuid"
 import clsx from "clsx";
 
 // icons
@@ -21,7 +20,7 @@ export const SocialNetworksButtons = ({classNameUl, theme = "accent"}:Props) => 
 
     const iconList = footerSocialLinks.map((socialNetwork)=>{
         return (
-            <li  key={uuidv4()}>
+            <li  key={socialNetwork.label+'id'}>
         <Button
         size="medium"
         variant="icon"
