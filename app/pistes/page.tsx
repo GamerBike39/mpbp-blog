@@ -1,11 +1,7 @@
-import { allPistes } from "@/.contentlayer/generated"
+
 import Image from "next/image"
-import Link from "next/link"
 import MenuPistes from "./components/MenuPistes"
 
-
-import {GiPathDistance} from "react-icons/gi";
-import {BiTrendingDown} from "react-icons/bi";
 import AnimatedNumbers from "@/components/animation/AnimatedNumbers";
 import GridPistes from "./components/GridPistes";
 
@@ -19,7 +15,7 @@ export default function blog(){
           <div className="flex flex-col justify-center items-center w-full mb-14 mt-10">
             <h1 className="text-2xl md:text-4xl lg:text-6xl">Plan des pistes</h1>
           </div>
-
+          <GridPistes />
           <div className="flex flex-col-reverse md:flex-row w-full max-w-5xl items-center justify-center gap-2">
             <div className="mb-10 min-w-min space-y-2">
               <div className="flex gap-1 text-3xl">
@@ -50,7 +46,7 @@ export default function blog(){
             </div>
           </div>
           
-          <GridPistes />
+         
         </div>
       <MenuPistes leftMenu={true} />
       </>

@@ -58,12 +58,8 @@ export const Navigation = ({}: Props) => {
             transition={{ duration: 0.5 }}
             variants={variants}
           >
-            <div className="absolute top-28">
-              {/* <Logo className="fill-white" size="very-large"/> */}
-            </div>
-
+    
             <motion.ul
-            
               className={`md:hidden flex items-center gap-7 flex-col`}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -123,7 +119,11 @@ export const Navigation = ({}: Props) => {
 
   const menuDesk = () => {
     return (
+      <>
+       <Logo className="fill-white absolute left-3 top-3 hidden lg:block" size="large"/>
       <ul key={"desk_menu"} className={`hidden md:flex items-center gap-7 m-0 px-4 py-2 backdrop-blur-md bg-white/50 rounded`}>
+        <li>
+        </li>
         <li className="m-0">
             <Link href="/" >Accueil</Link>
         </li>
@@ -136,18 +136,16 @@ export const Navigation = ({}: Props) => {
         <li className="m-0">
         <a href="#info">Infos</a>
         </li>
-        
          <li className="m-0">
             <CustomLink href="/contact" title="Contact" />
         </li>
-        
       </ul>
+      </>
     );
   };
 
   return (
     <div className="fixed w-full top-0 z-[500]">
-      {/* <Container className="py-1"> */}
         <nav className="flex items-center justify-end gap-7">
           <div className="flex items-center gap-7 rounded">
             <div
@@ -165,7 +163,6 @@ export const Navigation = ({}: Props) => {
             </AnimatePresence>
           </div>
         </nav>
-      {/* </Container> */}
     </div>
   );
 };

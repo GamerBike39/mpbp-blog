@@ -26,6 +26,10 @@ const MenuPistes = ({ className, leftMenu, action }: Props) => {
   // State pour le tri
   const [sortedPistes, setSortedPistes] = useState<item[]>([])
 
+  const topToWindow = () => {
+    window.scrollTo(0, 0);
+  }
+
   useEffect(() => {
     const sorted = [...allPistes].sort((a, b) =>
       a.title.localeCompare(b.title)
@@ -35,7 +39,7 @@ const MenuPistes = ({ className, leftMenu, action }: Props) => {
 
   return (
     // <div className={`${leftMenu ? "fixed top-10  w-max -left-2 px-10 space-y-3 hidden xl:block" : "w-max px-10 space-y-3 -translate-x-20 -translate-y-5"} 
-    <div className={`${leftMenu ? "fixed top-10  w-max -left-2 px-10 space-y-3 hidden xl:block" : "w-max px-10 space-y-3"} 
+    <div className={`${leftMenu ? "fixed top-28  w-max -left-2 px-10 space-y-3 hidden xl:block" : "w-max px-10 space-y-3"} 
     ${className}`}>
         <Link href="/pistes" onClick={action}>
             <p className="text-sm text-neutral-800 font-bold hover:scale-105 transition">Plan</p>
@@ -55,7 +59,7 @@ const MenuPistes = ({ className, leftMenu, action }: Props) => {
             </>
           ) : (
             <>
-              <Link href={item.slug} className="flex gap-1 items-center">
+              <Link href={item.slug} className="flex gap-1 items-center" onClick={topToWindow}>
                 <p className="text-sm hover:scale-105 transition hover:font-extrabold hover:bg-neutral-400/40  ">{item.title}</p>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <circle cx="12" cy="12" r="5" fill={item.colorDifficulty} />
@@ -115,6 +119,5 @@ export const MenuPistesMobile = ({ className, action, closeMenu}: Props) => {
       )
 
 }
-
 
 export default MenuPistes

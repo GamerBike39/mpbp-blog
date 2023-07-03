@@ -1,12 +1,16 @@
 import { notFound } from "next/navigation"
 import { allPistes } from "contentlayer/generated"
+import GridPistes from "../components/GridPistes"
+
+import Image from "next/image"
 
 import { Metadata } from "next"
 import { Mdx } from "@/components/mdx-components"
 import MenuPistes from "../components/MenuPistes"
 
 import {FaExchangeAlt} from 'react-icons/fa'
-import GridPistes from "../components/GridPistes"
+import {GiPathDistance} from "react-icons/gi";
+import {BiTrendingDown, BiTimer} from "react-icons/bi";
 
 interface PostProps {
   params: {
@@ -58,22 +62,34 @@ export default async function PostPage({ params }: PostProps) {
     <MenuPistes leftMenu={true}/>
         {/* <MenuPistes/> */}
     <article className="py-6 prose mx-auto px-6">
-      <div className="flex items-center gap-1">
+      <div>
         <h1 className="mb-2">{post.title}</h1>
-        <a href="#pistes" aria-label="choix des pistes">
+        <a href="#pistes" aria-label="choix des pistes" className="mt-2 pb-8">
           <FaExchangeAlt/>
         </a>
-      </div>
-      {post.description && (
-        <p className="text-xl mt-0 text-slate-700 dark:text-slate-200">
-          {post.description}
-        </p>
-      )}
+    </div>
+
+        <div className="2xl:fixed 2xl:right-6 2xl:top-28 shadow-2xl bg-white/80 p-5 mt-4">
+            <p className="text-2xl border-b-2">Statistiques de la piste : </p>
+          <div className="w-full grid grid-cols-2 xl:grid-cols-1 space-y-1">
+            <p className="font-bold col-span-1 xl:col-span-2 m-0"> {post.distance} Km <GiPathDistance size={35} className="inline"/> </p>
+            <p className="font-bold col-span-1 m-0"> {post.elevation}m <BiTrendingDown size={35} className="inline"/></p>
+            <p className="font-bold col-span-2 m-0"> {post.estimatedTime} <BiTimer size={35} className="inline"/> </p>
+            <p className="font-bold col-span-1 xl:col-span-2  m-0">Virages : {post.virages} </p>
+            <span className="font-bold col-span-1 xl:col-span-2  m-0 flex items-center">
+              {post.jumps}
+              <Image src='/jump.png' alt="icone de saut" width={40} height={40} className="m-0"/>
+                </span>
+            <a href="#video" className="col-span-2">Vidéos</a>
+          </div>
+        </div>
+
       <hr className="my-4" />
+
       <Mdx code={post.body.code} />
     </article>
     <div id="pistes" className="max-w-3xl mx-auto"> 
-    <p className="text-2xl my-2 shadow-2xl">Liste des pistes :</p>
+    <p className="text-2xl my-2 shadow-2xl px-2">Liste des pistes :</p>
       <GridPistes/>
     </div>
     </>

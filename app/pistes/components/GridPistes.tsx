@@ -8,14 +8,16 @@ import {GiPathDistance} from "react-icons/gi";
 import {BiTrendingDown} from "react-icons/bi";
 
 import { usePathname } from 'next/navigation';
-import { Divide } from 'hamburger-react';
-import path from 'path';
 
 interface GridPistesProps {
  
 }
 
 const GridPistes: FC<GridPistesProps> = ({  }) => {
+
+    const topToWindow = () => {
+      window.scrollTo(0, 0);
+    }
 
     const pathname = usePathname()
    
@@ -26,7 +28,7 @@ const GridPistes: FC<GridPistesProps> = ({  }) => {
             pathname === post.slug ? (
                 null
             ) : (
-            <article key={post._id} className="group col-span-6 sm:col-span-3 md:col-span-2 w-screen h-48 md:w-64 md:h-64 overflow-hidden relative hover:shadow-2xl transition-shadow duration-500">
+            <article key={post._id} className="group col-span-6 sm:col-span-3 md:col-span-2 w-screen h-48 md:w-64 md:h-64 overflow-hidden relative">
             {post.imagePrev && (
               <Image
               src={post.imagePrev}
@@ -37,7 +39,7 @@ const GridPistes: FC<GridPistesProps> = ({  }) => {
               className="object-cover w-full h-full md:rounded-lg group-hover:scale-110 transition-all duration-500 ease-in-out"
               />
               )}
-            <Link href={post.slug} className="absolute w-full h-full flex flex-col justify-end items-start containerBorderBlack rounded-lg">
+            <Link href={post.slug} className="absolute w-full h-full flex flex-col justify-end items-start containerBorderBlack rounded-lg" onClick={topToWindow}>
             <div className="flex items-center">
               <h2 className="text-white font-extrabold my-1 px-2">{post.title}</h2>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -75,6 +75,15 @@ export const Pistes = defineDocumentType(() => ({
     elevation: {
       type: "string"
     },
+    virages: {
+      type: "number"
+    },
+    jumps: {
+      type: "number"
+    },
+    estimatedTime: {
+      type: "string"
+    },
     imagePrev: {
       type: "string",
     },
