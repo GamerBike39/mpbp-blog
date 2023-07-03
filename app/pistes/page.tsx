@@ -1,7 +1,3 @@
-'use client';
-
-import { useState } from "react"
-
 import { allPistes } from "@/.contentlayer/generated"
 import Image from "next/image"
 import Link from "next/link"
