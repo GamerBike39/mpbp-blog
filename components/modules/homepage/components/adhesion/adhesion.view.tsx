@@ -1,6 +1,7 @@
 import { Container } from '@/components/container/container';
 import Image from 'next/image';
 import { BtnAdherer } from '../info/BtnAdherer';
+import { Typography } from '@/ui/design-system/typography/typography';
 
 
 // images
@@ -14,11 +15,11 @@ const Adhesion = () => {
     return (
         <>
         <div id='adhesion' className='py-10'>
-            <div className="w-fit mx-auto">
-                <h2  className="w-fit text-center py-12 z-10 beforeLine text-neutral-900">
-                    Association
-                </h2>
-            </div>
+        <div className="w-fit mx-auto">
+               <Typography variant="h2" component="h2" theme="black" className="w-fit text-center py-12 z-10 beforeLine">
+                  Association
+               </Typography>
+                </div>
         
         <Container>
 
@@ -59,9 +60,11 @@ const Adhesion = () => {
             </div>
                 <hr />
                 <div className="w-fit mx-auto mt-10 mb-28 py-10">
-                <h2  className="w-fit text-center py-12 z-10 beforeLine text-neutral-900">
-                    Shape
-                </h2>
+                <div className="w-fit mx-auto">
+                            <Typography variant="h2" component="h2" theme="black" className="w-fit text-center py-12 z-10 beforeLine">
+                                Shape
+                            </Typography>
+                        </div>
 
                 <div className='grid grid-cols-2 gap-1'>
                     <div className='col-span-2 lg:col-span-1'>

@@ -15,7 +15,7 @@ export const HomePage = () => {
     return (
         <>
             <Heroslider />
-            <Actus actus={actusContent} />
+            {/* <Actus actus={actusContent} /> */}
             <InfoList />
             <PlanPiste />
             <Adhesion />

@@ -19,8 +19,6 @@ import { FaDownload } from "react-icons/fa";
 
 // image
 import planZoom from "£/img/plan/carte.webp"
-import bgtopo from "£/img/plan/bgtopo.webp"
-
 
 export const PlanPiste = () => {
     
@@ -42,7 +40,7 @@ export const PlanPiste = () => {
              
             {/* <div className="w-screen relative containerBorderBlack"> */}
         <Container className="my-10 py-6 ">
-            <div  className="rounded grid place-content-center grid-cols-2 bg-gray/5 p-1 lg:p-10 shadow-2xl" >
+            <div  className="rounded grid place-content-center grid-cols-2 bg-gray/5 p-1 lg:p-10 shadow-2xl bg-neutral-100" >
                 <div ref={RefPlan} className={clsx("col-span-2 lg:col-span-1")} >
 
                                 {/* <TransformWrapper centerOnInit>

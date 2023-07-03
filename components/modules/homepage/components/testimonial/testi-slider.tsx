@@ -27,7 +27,7 @@ export const Slider = ({classname}:SliderProps) => {
                 arrows: true,
                 perPage: 3,
                 pagination: true,
-                speed: 1500,
+                speed: 500,
                 easing: 'cubic-bezier(0.25, 1, 0.5, 1)',
                 width: '100%',
                 breakpoints: {
@@ -54,7 +54,7 @@ export const Slider = ({classname}:SliderProps) => {
         >
         
             {sliderContent.map((slide, index) => (
-                <SplideSlide key={index} className='flex flex-col items-center border-2 border-gray-600/10 shadow-xl p-10 bg-gray-300'> 
+                <SplideSlide key={index} className='flex flex-col items-center border-2 border-gray-600/10 shadow-xl p-10 bg-neutral-100'> 
                         <div className='relative w-40 h-40 min-h-max'>
                             <Image src={slide.img} alt={slide.person} fill  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" loading="lazy" placeholder='blur' className='rounded-full'/>
                         </div>
