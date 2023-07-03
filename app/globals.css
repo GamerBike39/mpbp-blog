@@ -90,9 +90,9 @@ html{
     50%/50%; /* no need to touch this, we always want 50% of slice and border-width */
 }
 
-.containerBorderWhite {
+.overlayImgBlack{
   border-image:
-  linear-gradient(to bottom, #f0f3ed70, #FDFEFF) /* your gradient here */
+  linear-gradient(#50585A, #d6d5d554) /* your gradient here */
     50%/50%; /* no need to touch this, we always want 50% of slice and border-width */
 }
 
