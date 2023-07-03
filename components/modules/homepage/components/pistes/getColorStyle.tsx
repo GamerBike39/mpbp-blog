@@ -29,7 +29,7 @@ export const getFontStyle = (fontSize: string): string => {
     case "small":
       return "text-caption6";
     case "medium":
-      return "text-[11px] md:text-[14px]";
+      return "text-[11px] md:text-[13px]";
     case "large":
       return "text-[14px]";
     default:
