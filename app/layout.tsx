@@ -1,11 +1,11 @@
 import Link from "next/link"
 import "./globals.css"
-import { Inter } from "next/font/google"
+import { Nunito } from "next/font/google"
 import { Analytics } from "@/components/analytics"
 import { Navigation } from "@/components/navigation/navigation"
 
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Nunito({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Create Next App",

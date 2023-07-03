@@ -30,7 +30,7 @@ const AnimatedNumbers = ({ value, timeAnimation }) => {
 
 
     return (
-        <span ref={ref}>
+        <span ref={ref} className="font-bold">
             {value}
         </span>
     )

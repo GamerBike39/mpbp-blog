@@ -27,3 +27,15 @@ export function BtnAdherer() {
     </motion.div>
   );
 }
+
+export function BtnAdhererNoAnim() {
+  return (
+    <div className={"w-full flex"}>
+      <Link href="https://www.helloasso.com/associations/muddy-bike-crew/adhesions/adhesions-2023-association-mont-poupet-bike-park" target='_blank' className='ml-auto no-underline'>
+        <button className="ml-auto rounded bg-green-600 px-3 py-5 mb-5 text-white font-bold text-sm flex items-center hover:scale-105 transition ease-in-out">
+          {`Adhérer à l'association` } <BiLinkExternal className='inline-block ml-2' size={20}/>
+        </button>
+      </Link>
+    </div>
+  );
+}

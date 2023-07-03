@@ -4,7 +4,6 @@ import { allPistes } from "@/.contentlayer/generated"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState, useEffect } from "react"
-import ts from "typescript"
 
 interface Props {
   className?: string

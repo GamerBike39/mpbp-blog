@@ -70,10 +70,10 @@ export const Pistes = defineDocumentType(() => ({
       type: "string"
     },
     distance: {
-      type: "number"
+      type: "string"
     },
     elevation: {
-      type: "number"
+      type: "string"
     },
     imagePrev: {
       type: "string",

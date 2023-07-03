@@ -19,13 +19,13 @@ import crampons from "£/img/svg/crampons.svg";
  const Heroslider = () => {
   return (
       
-      <div id='top' className='flex flex-wrap items-start relative containerBorderBlack'>
+      <div id='top' className='flex flex-wrap items-start relative'>
       <LargeContainer className='lg:mb-6 lg:mt-0 px-6 relative'>
     <div className='w-full relative z-20 lg:mb-10'> 
        <Image src={Logo} alt='Mont Poupet Bike Park' width={600} priority className='mx-auto'/>
        <h3 className='text-center'>The Smiling Zone</h3>
     </div>
-            <Image src={hand} width={400} alt='main de shapper' className='absolute -right-5 top-5 -rotate-90 z-10 hidden xl:block rotateAnime'/>
+            <Image src={hand} width={400} alt='main de shapper' priority className='absolute -right-5 top-5 -rotate-90 z-10 hidden xl:block rotateAnime'/>
         <Image src={claraWheelie} alt='hero' width={300} priority className='absolute brightness-85 mx-auto z-0 top-22 hidden xl:block w-[50px] lg:w-80'/>
     <Container>
     <div className='w-full flex flex-col-reverse my-2 lg:mb-2 lg:flex-row items-center'>

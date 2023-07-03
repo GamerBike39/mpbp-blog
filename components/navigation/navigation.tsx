@@ -90,10 +90,6 @@ export const Navigation = ({}: Props) => {
                initial={{ opacity: 0, y: -100 }}
                whileInView={{ opacity: 1, y:0, transition: { duration: 0.4, delay: 0.3 } }}
               >
-  
-                  {/* <Link href="/pistes" title="Plan des pistes"  className="!text-white">
-                    Plan des pistes
-                  </Link> */}
                     <DropDownMenuPistes mobileMenu={true}  action={toggleMobileMenu}/>
                
                 </motion.li>

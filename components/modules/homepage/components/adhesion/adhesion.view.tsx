@@ -20,7 +20,7 @@ const Adhesion = () => {
                 </h2>
             </div>
         
-        <Container className='bg-white/70'>
+        <Container>
 
             <h3 className="max-w-xl mx-auto py-12 z-10 text-gray-600">
                 Le Mont Poupet Bike Park est une association loi 1901. Elle a pour but de développer et d&apos;entretenir le bike park du Mont Poupet.

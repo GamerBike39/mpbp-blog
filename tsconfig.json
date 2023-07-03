@@ -32,6 +32,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".contentlayer/generated"
-  ],
+, "components/animation/AnimatedNumbers.jsx"  ],
   "exclude": ["node_modules"]
 }
