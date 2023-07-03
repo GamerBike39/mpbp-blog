@@ -17,13 +17,13 @@ import crampons from "£/img/svg/crampons.svg";
 
  const Heroslider = () => {
   return (
-      <div id='top' className='flex flex-wrap items-start relative '>
-      <LargeContainer className='lg:mt-0 px-6 py-16 h-screen relative  '>
+      <div id='top' className='flex flex-wrap items-start relative  '>
+      <LargeContainer className='lg:mt-0 px-6 py-16 h-screen relative divider-1 '>
       
       <Image src={"/img/hero/bgsapins_.webp"} alt="" priority fill sizes="100vw" className='w-full h-full object-cover brightness-75' />
     <div className='w-full relative z-20 lg:mb-10'> 
        <Image src={Logo} alt='Mont Poupet Bike Park' width={600} priority className='mx-auto'/>
-       <h3 className='text-center text-white'>The Smiling Zone</h3>
+       <h3 className='text-center text-white font-extrabold'>The Smiling Zone</h3>
     </div>
             <Image src={hand} width={400} alt='main de shapper' priority className='absolute -right-5 top-5 -rotate-90 z-10 hidden xl:block rotateAnime'/>
     <Container>
@@ -53,7 +53,7 @@ import crampons from "£/img/svg/crampons.svg";
     </Container>
     </LargeContainer>
 
-    <div id='slider' className='w-full grid grid-cols-10 gap-10  pt-20 mb-24 place-content-center place-items-center relative z-30'>
+    <div id='slider' className='w-full grid grid-cols-10 gap-10  pt-20 mb-5 place-content-center place-items-center relative z-30'>
         <div className='col-span-10 lg:col-span-4'>
                 <div className='w-full lg:my-32 my-5 lg:hidden'>
                     <Typography variant='h4' className='text-center'>

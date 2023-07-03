@@ -25,7 +25,7 @@ export const PlanPiste = () => {
     const RefPlan = useRef(null)
     
     return (
-        <div id="plan" className="relative w-full  grid place-content-center min-h-[100lvh] ">
+        <div id="plan" className="relative w-full  grid place-content-center min-h-[100lvh] bg-neutral-200/50  divider-big-round-top divider-big-round-bottom ">
             {/* <Image src={bgtopo} alt="background plan des pistes" fill quality={100} loading="lazy" className="object-center object-cover sepia brightness-50 opacity-25" /> */}
                     <div className="pt-5 mt-10">
                         <div className="w-fit mx-auto">
