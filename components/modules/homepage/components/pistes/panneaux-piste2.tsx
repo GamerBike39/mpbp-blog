@@ -25,9 +25,13 @@ const PanneauxPiste = ({
   className,
   link = ""
 }: PanneauxPisteProps) => {
+
+  const topToWindow = () => {
+    window.scrollTo(0, 0);
+  };
   
   return (
-    <Link href={link}>
+    <Link href={link} onClick={topToWindow}>
       <motion.button
         className={clsx(
           getColorStyle(color),
