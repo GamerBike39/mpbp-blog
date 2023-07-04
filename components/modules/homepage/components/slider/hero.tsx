@@ -18,7 +18,7 @@ import crampons from "£/img/svg/crampons.svg";
  const Heroslider = () => {
   return (
       <div id='top' className='flex flex-wrap items-start relative  '>
-      <LargeContainer className='lg:mt-0 px-6 py-16 h-screen relative divider-1 '>
+      <LargeContainer className='lg:mt-0 px-6 py-16 min-h-screen relative divider-1 '>
       
       <Image src={"/img/hero/bgsapins_.webp"} alt="" priority fill sizes="100vw" className='w-full h-full object-cover brightness-75' />
     <div className='w-full relative z-20 lg:mb-10'> 
@@ -56,7 +56,7 @@ import crampons from "£/img/svg/crampons.svg";
     <div  className='w-full grid grid-cols-10 gap-10  pt-20 mb-5 place-content-center place-items-center relative z-30'>
 
     <div id='slider' className="w-fit mx-auto col-span-10">
-               <Typography variant="h2" component="h2" theme="black" className="w-fit text-center z-10 pb-5 beforeLine">
+               <Typography variant="h2" component="h2" theme="black" className="w-full text-center z-10 pb-5 beforeLine2 relative">
                Découvrez le Bike Park du Mont Poupet
                </Typography>
         </div>

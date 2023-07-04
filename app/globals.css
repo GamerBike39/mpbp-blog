@@ -108,8 +108,24 @@ html{
   width: 90%;
   height: 18px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) skew(295deg, 360deg);
   bottom: 30%;
+  z-index: -1;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #21d14d85;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.beforeLine2::before{
+  content: '';
+  position: absolute;
+  margin: 0 auto;
+  width: 90%;
+  height: 25px;
+  left: 50%;
+  transform: translateX(-50%) skew(295deg, 360deg);
+  bottom: 20%;
   z-index: -1;
   border-radius: 0px 0px 5px 5px;
   background-color: #21d14d85;
@@ -163,18 +179,15 @@ iframe{
 }
 
 @media screen and (max-width: 768px) {
-  .nextui-modal-close-icon-svg{
-    stroke: black;
-    scale: 1.5;
-    margin-right: 0.5rem;
-    margin-top: 0.2rem;
-  }
-
   .splide__arrow--next{
     right: -1em!important;
   }
   .splide__arrow--prev{
     left: -1em!important;
+  }
+
+  .beforeLine::before, .beforeLine2::before{
+   display: none;
   }
 
 }
