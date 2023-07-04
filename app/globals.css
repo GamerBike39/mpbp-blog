@@ -277,5 +277,13 @@ iframe{
   z-index: 30;
 }
 
+.page {
+  transition: 2s;
+  height: 100%;
+  opacity: 0;
+}
 
+.fadeIn {
+  opacity: 1;
+}
 

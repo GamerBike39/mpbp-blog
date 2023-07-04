@@ -5,6 +5,8 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState, useEffect } from "react"
 
+import {LiaMapSignsSolid} from "react-icons/lia"
+
 interface Props {
   className?: string
   leftMenu?: boolean
@@ -27,19 +29,7 @@ const MenuPistes = ({ className, leftMenu, action }: Props) => {
   const [sortedPistes, setSortedPistes] = useState<item[]>([])
 
   const topToWindow = () => {
-    if ('scrollBehavior' in document.documentElement.style) {
-      // Utilise la méthode scroll() avec l'option de comportement "smooth" pour les navigateurs prenant en charge scrollBehavior
-      window.scroll({
-        top: 0,
-        behavior: 'smooth',
-      });
-    } else {
-      // Utilise la méthode scrollTo() pour les navigateurs qui ne prennent pas en charge scrollBehavior
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
-    }
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {
@@ -53,17 +43,18 @@ const MenuPistes = ({ className, leftMenu, action }: Props) => {
     // <div className={`${leftMenu ? "fixed top-10  w-max -left-2 px-10 space-y-3 hidden xl:block" : "w-max px-10 space-y-3 -translate-x-20 -translate-y-5"} 
     <div className={`${leftMenu ? "fixed top-28  w-max -left-2 px-10 space-y-3 hidden xl:block" : "w-max px-10 space-y-3"} 
     ${className}`}>
-        <Link href="/pistes" onClick={action}>
-            <p className="text-sm text-neutral-800 font-bold hover:scale-105 transition">Plan</p>
-        </Link>
+         <Link href="/pistes" onClick={action} className="flex items-center gap-2">
+                <p className="px-5 text-sm text-neutral-800 font-bold hover:scale-105 transition">Plan</p>
+                <LiaMapSignsSolid />
+            </Link>
         <hr  className="text-yellow-500"/>
       {sortedPistes.map((item) => (
         <div key={item._id}>
           {item.slug === pathName ? (
             <>
               <Link href={item.slug} className="flex gap-1 items-center ">
-                <p className="text-xl font-bold hover:scale-105 bg-neutral-800 px-5 text-white transition">{item.title}</p>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <p className="text-sm font-bold  bg-neutral-800 px-5 text-white transition">{item.title}</p>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="white" viewBox="0 0 24 24" stroke="currentColor">
                   <circle cx="12" cy="12" r="5" fill={item.colorDifficulty} />
                 </svg>
               </Link>
@@ -72,8 +63,8 @@ const MenuPistes = ({ className, leftMenu, action }: Props) => {
           ) : (
             <>
               <Link href={item.slug} className="flex gap-1 items-center" onClick={topToWindow}>
-                <p className="text-sm hover:scale-105 transition hover:font-extrabold hover:bg-neutral-400/40  ">{item.title}</p>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <p className="text-sm px-5 hover:scale-105 transition hover:font-extrabold hover:bg-neutral-400/40  ">{item.title}</p>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="white" viewBox="0 0 24 24" stroke="currentColor">
                   <circle cx="12" cy="12" r="5" fill={item.colorDifficulty} />
                 </svg>
               </Link>
@@ -99,8 +90,9 @@ export const MenuPistesMobile = ({ className, action, closeMenu}: Props) => {
 
     return (
         <div className={`${className}`}>
-            <Link href="/pistes" onClick={action}>
+            <Link href="/pistes" onClick={action} className="flex items-center gap-2">
                 <p className="text-sm text-neutral-800 font-bold hover:scale-105 transition">Plan</p>
+                <LiaMapSignsSolid />
             </Link>
             <hr/>
           {sortedPistes.map((item) => (

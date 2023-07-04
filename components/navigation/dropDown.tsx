@@ -36,13 +36,13 @@ const DropDownMenuPistes = ({mobileMenu, action}:Props) => {
 
    <AnimatePresence>
     {isOpen && (
-        <motion.div className={`${mobileMenu? "fixed top-0 left-0 w-screen z-[500]" : "absolute top-3 origin-top-left p-5"}`}
-          initial={{  opacity: 0,x: -20}}
+        <motion.div className={`${mobileMenu? "fixed top-0 left-0 w-screen z-[5000]" : "absolute top-6 -left-20 "}`}
+          initial={{  opacity: 0,x:0}}
           exit={{ opacity: 0,}}
           animate={{ opacity: 1}}
           transition={{ duration: 0.2, ease: 'easeInOut' }}
         >
-        {mobileMenu? <MenuPistesMobile className='bg-white p-10 space-y-5 h-screen ' action={action} closeMenu={handleClick}/> : <MenuPistes action={handleClick} leftMenu={false} className={`bg-white backdrop:blur-lg py-5 ${mobileMenu? 'w-screen' :""}`} />}
+        {mobileMenu? <MenuPistesMobile className='bg-white p-10 space-y-5 h-screen ' action={action} closeMenu={handleClick}/> : <MenuPistes action={handleClick} leftMenu={false} className={`bg-neutral-100 backdrop:blur-lg py-5 rounded-md px-3 min-w-[250px] ${mobileMenu? 'w-screen' :""}`} />}
         </motion.div>
     )}
     </AnimatePresence>
