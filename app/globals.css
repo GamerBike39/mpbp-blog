@@ -182,7 +182,7 @@ iframe{
 
 .divider-1:after{
   content: '';
-  background-image: url(/dividers/clouds-bottom.svg);
+  background-image: url(/dividers/faded-clouds-bottom.svg);
   width: 100%;
   height: 50px;
   position: absolute;
@@ -196,7 +196,7 @@ iframe{
 
 .divider-2:after{
   content: '';
-  background-image: url(/dividers/clouds-top.svg);
+  background-image: url(/dividers/faded-clouds-top.svg);
   width: 100%;
   height: 50px;
   position: absolute;

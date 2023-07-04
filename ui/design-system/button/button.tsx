@@ -46,13 +46,13 @@ export  const Button = ({
 
             switch (variant) {
                 case "accent": // default
-                    variantStyles = "bg-green-600/90  hover:bg-primary-400 text-neutral-300 rounded"
+                    variantStyles = "bg-green-600/90  hover:bg-green-400 text-neutral-100 rounded "
                     break;
                 case "secondary":
                     variantStyles = "bg-red-200 hover:bg-primary-300/50 text-primary rounded"
                     break;
                 case "outline":
-                    variantStyles = "bg-white hover:bg-gray-400/50 border border-gray-500 text-gray-900 rounded"
+                    variantStyles = "bg-white hover:bg-gray-800 hover:text-neutral-100 border border-gray-500 text-gray-900 rounded "
                     break;
                 case "succes":
                         variantStyles = "bg-red-600 hover:bg-secondary-400 text-white rounded"

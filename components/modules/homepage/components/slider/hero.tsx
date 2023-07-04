@@ -41,7 +41,7 @@ import crampons from "£/img/svg/crampons.svg";
             {/* <p className='pt-3 lg:pt-8 text-right w-full text-gray-700'>Président of the Mont Poupet Bike Park</p> */}
             <div className='flex gap-5 mt-10 w-full justify-center'>
                 <Button baseUrl='#adhesion' title='adhesion' linkType='internal' variant='accent' size='small'>Adhérer</Button>
-                <Button baseUrl='#plan' title='plan des pistes' linkType='internal' size='small' >Plan des pistes</Button>
+                <Button baseUrl='#plan' title='plan des pistes' linkType='internal' size='small' variant='outline' >Plan des pistes</Button>
             </div>
 
             <a href="#slider" className='hidden lg:block'>
@@ -52,13 +52,21 @@ import crampons from "£/img/svg/crampons.svg";
     </div>
     </Container>
     </LargeContainer>
+    
+    <div  className='w-full grid grid-cols-10 gap-10  pt-20 mb-5 place-content-center place-items-center relative z-30'>
 
-    <div id='slider' className='w-full grid grid-cols-10 gap-10  pt-20 mb-5 place-content-center place-items-center relative z-30'>
+    <div id='slider' className="w-fit mx-auto col-span-10">
+               <Typography variant="h2" component="h2" theme="black" className="w-fit text-center z-10 pb-5 beforeLine">
+               Découvrez le Bike Park du Mont Poupet
+               </Typography>
+        </div>
         <div className='col-span-10 lg:col-span-4'>
-                <div className='w-full lg:my-32 my-5 lg:hidden'>
-                    <Typography variant='h4' className='text-center'>
+            
+                <div className='w-full  my-5 '>
+                    <Typography variant='h4' className='text-center text-neutral-500'>
                         Des chiffres incroyables
                     </Typography>
+                   
                     <hr />
                 </div>
             <div className='flexCenter gap-5 lg:gap-10 flex-wrap max-w-md mx-auto'>
@@ -88,7 +96,7 @@ import crampons from "£/img/svg/crampons.svg";
                 </p>
             </div>
         </div>
-                <Slider classname='lg:my-10 lg:py-20 col-span-10 lg:col-span-6'/>
+                <Slider classname='lg:my-5 lg:py-10 col-span-10 lg:col-span-6'/>
    
     </div>
     </div>
