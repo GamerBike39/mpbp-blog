@@ -27,7 +27,19 @@ const PanneauxPiste = ({
 }: PanneauxPisteProps) => {
 
   const topToWindow = () => {
-    window.scrollTo(0, 0);
+    if ('scrollBehavior' in document.documentElement.style) {
+      // Utilise la méthode scroll() avec l'option de comportement "smooth" pour les navigateurs prenant en charge scrollBehavior
+      window.scroll({
+        top: 0,
+        behavior: 'smooth',
+      });
+    } else {
+      // Utilise la méthode scrollTo() pour les navigateurs qui ne prennent pas en charge scrollBehavior
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
   };
   
   return (

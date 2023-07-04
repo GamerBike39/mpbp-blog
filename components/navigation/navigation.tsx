@@ -120,7 +120,9 @@ export const Navigation = ({}: Props) => {
   const menuDesk = () => {
     return (
       <>
-       <Logo className="fill-white absolute left-3 top-3 hidden lg:block" size="large"/>
+      <Link href="/" className="absolute left-3 top-3 hidden lg:block">
+       <Logo className="fill-white " size="large"/>
+      </Link>
       <ul key={"desk_menu"} className={`hidden md:flex items-center gap-7 m-0 px-4 py-2 backdrop-blur-md bg-white/50 rounded`}>
         <li>
         </li>
