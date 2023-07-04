@@ -43,7 +43,7 @@ const PanneauxPiste = ({
   };
   
   return (
-    <Link href={link} onClick={topToWindow}>
+    <Link href={link+'#title'} onClick={topToWindow}>
       <motion.button
         className={clsx(
           getColorStyle(color),
