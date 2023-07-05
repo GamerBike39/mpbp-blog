@@ -16,11 +16,6 @@
 	background-color: #F5F5F5;
  
 }
-/* 
-body{
-  background-image: url(/noise.svg);
-  background-attachment: fixed;
-} */
 
 }
 
@@ -33,20 +28,6 @@ a{
   position: relative;
 }
 
-/* a:hover{
-  color: rgb(102, 204, 252)!important;
-} */
-
-/* p{
-  font-size: 1.2rem;
-  font-weight: 400;
-  font-family: 'Gluten', sans-serif;
-  letter-spacing: 1px;
-} */
-
-#nextui-modal{
-  font-family: "Gluten", sans-serif, !important;
-}
 
 .animate, a, a:hover{
   transition: all 0.2s ease-in-out;
