@@ -6,18 +6,18 @@ import Adhesion from "./components/adhesion/adhesion.view";
 import  {Testimonial}  from "./components/testimonial/testimonial.view";
 
 
-export const HomePage = () => {
-
-
+const HomePage = () => {
 
     return (
         <>
             <Heroslider />
             <InfoList />
             <PlanPiste />
-            <Testimonial />
             <Adhesion />
+            <Testimonial />
             <Partenaires />
         </>
     )
 };
+
+export default HomePage;

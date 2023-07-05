@@ -1,6 +1,4 @@
-'use client';
-
-import { HomePage } from "@/components/modules/homepage/homepage.view"
+import  HomePage  from "@/components/modules/homepage/homepage.view"
 
 
 export default function Home() {
