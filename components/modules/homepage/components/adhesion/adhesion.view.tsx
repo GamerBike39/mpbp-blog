@@ -14,7 +14,7 @@ const Adhesion = () => {
 
     return (
         <>
-        <div id='adhesion' className='py-10 divider-big-round-top relative'>
+        <div id='adhesion' className='py-10'>
         <div className="w-fit mx-auto">
                <Typography variant="h2" component="h2" theme="black" className="w-fit text-center py-12 z-10 beforeLine">
                   Association
