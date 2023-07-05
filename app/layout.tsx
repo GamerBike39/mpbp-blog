@@ -11,6 +11,21 @@ const inter = Nunito({ subsets: ["latin"] })
 export const metadata = {
   title: "Mont Poupet Bike Park",
   description: "Venez découvrir le Mont Poupet Bike Park, un bike park enduro situé dans le Jura, à Salins-les-Bains.",
+  openGraph: {
+    locale: "fr_FR",
+    url: "https://www.mpbp-blog.vercel.app",
+    title: "Mont Poupet Bike Park",
+    description: "Venez découvrir le Mont Poupet Bike Park, un bike park enduro situé dans le Jura, à Salins-les-Bains.",
+    images: [
+      {
+        url: "",
+        width: 1200,
+        height: 630,
+        alt: "Mont Poupet Bike Park"
+      }
+    ]
+  },
+  
 }
 
 interface RootLayoutProps {
