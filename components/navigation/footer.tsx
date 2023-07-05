@@ -35,6 +35,8 @@ export const Footer = ({} : Props) => {
 
 
 
+
+
     return (
         <footer className="bg-gray-900 relative">
             <Container className="flex flex-col md:flex-row justify-between pt-10">

@@ -46,7 +46,7 @@ import crampons from "£/img/svg/crampons.svg";
             </div>
 
             <a href="#slider" className='hidden lg:block'>
-                <Image src={crampons} alt='crampons' width={20} className='py-10 my-10'/>
+                <Image src={crampons} alt='crampons' width={20} className='py-5 my-5'/>
             </a>
  
         </div>
