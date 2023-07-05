@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, lazy } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -26,7 +26,7 @@ const MdxImage: FC<MdxImageProps> = ({ src, desc, className }) => {
    }
 
    >
-       <Image src={src} alt="image" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw" className='object-cover w-full h-full'/>
+       <Image src={src} alt="image" fill priority placeholder='empty' sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw" className='object-cover w-full h-full'/>
        <p className='my-10 pb-2 text-neutral-700'>{desc}</p>
    </motion.div>
     </>

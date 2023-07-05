@@ -77,11 +77,11 @@ export default async function PostPage({ params }: PostProps) {
           
             <div className="font-bold col-span-1 xl:col-span-2 m-0 h-5 flex items-center">
               <p className="translate-y-5">{post.jumps}</p>
-              <Image src='/img/svg/panneauxbosses.svg' alt="icone de saut" width={90} height={90} className="m-0"/>
+              <Image src='/img/svg/panneauxbosses.svg' alt="icone de saut" width={90} height={90} className="m-0 w-24 h-24"/>
                 </div>
             <div className="font-bold col-span-1 xl:col-span-2 m-0 flex items-center gap-3">
               <p>{post.virages}</p>
-              <Image src='/img/svg/virages.svg' alt="icone de virages" width={20} height={20} className="m-0"/>
+              <Image src='/img/svg/virages.svg' alt="icone de virages" width={20} height={20} className="m-0 w-7 h-7"/>
                 </div>
                 <p className="font-bold col-span-2 my-10"> {post.estimatedTime} <BiTimer size={35} className="inline"/> </p>
             <a href="#video" className="col-span-2">Vidéos</a>
