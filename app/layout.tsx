@@ -3,6 +3,7 @@ import "./globals.css"
 import { Nunito } from "next/font/google"
 import { Analytics } from "@/components/analytics"
 import { Navigation } from "@/components/navigation/navigation"
+import { Footer } from "@/components/navigation/footer"
 
 
 const inter = Nunito({ subsets: ["latin"] })
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <main>{children}</main>
           </div>
           <Analytics />
+          <Footer />
       </body>
     </html>
   )

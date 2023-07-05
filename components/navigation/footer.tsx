@@ -1,3 +1,4 @@
+'use client';
 import { Typography } from "@/ui/design-system/typography/typography"
 import { Container } from "../container/container"
 import Image from "next/image"
@@ -35,19 +36,19 @@ export const Footer = ({} : Props) => {
 
 
     return (
-        <footer className="bg-gray">
-            <Container className="flex flex-col md:flex-row justify-between pt-16">
+        <footer className="bg-gray-900 relative">
+            <Container className="flex flex-col md:flex-row justify-between pt-10">
 
               {/* cta */}
               <div className="flex flex-col items-center gap-1">
                 <Typography variant="caption1" theme="white">
                     Rejoindre la Smiling Zone
                 </Typography>
-                <Typography variant="caption3" theme="gray">
+                <Typography variant="caption3" theme="white" className="font-extrabold">
                     Abonne toi à notre Instagram
                 </Typography>
                 <Link href="https://www.instagram.com/montpoupetbikepark/" target="_blank" aria-label="Instagram">
-                <Image src={insta} alt="instagram" width={200} />
+                <Image src={insta} alt="instagram" width={100} />
                 </Link>
               </div>
                 <hr className="bg-white/25 my-10 lg:hidden" />
@@ -55,11 +56,11 @@ export const Footer = ({} : Props) => {
               <Typography variant="caption1" theme="white">
                     Tu veux adhérer ?
                 </Typography>
-                <Typography variant="caption3" theme="gray">
+                <Typography variant="caption3" theme="white" className="font-extrabold">
                     Inscris toi avec HelloAsso
                 </Typography>
                   <Link href="https://www.helloasso.com/associations/muddy-bike-crew/adhesions/adhesions-2023-association-mont-poupet-bike-park" target="_blank" aria-label="Hello Asso">
-                    <Image src={helloasso} alt="HelloAsso" width={200} />
+                    <Image src={helloasso} alt="HelloAsso" width={100} />
                     </Link>
               </div>
 
@@ -70,17 +71,17 @@ export const Footer = ({} : Props) => {
             </Container>
 
             {/* bottom footer */}
-            <Container className="pt-9 pb-11 space-y-11">
+            <Container className="pt-5 pb-10 space-y-2">
                 <hr  className="text-gray-800"/>
                 <div className="flex justify-between items-center">
                     <ul>
-                        <Typography variant="caption4" theme="gray" component="li">
-                           Fait avec ❤️ par <CustomLink href="https://google.com" target="_blank" title="GamerBike" className="text-white hover:text-primary-300"/>  {currentYear}
+                        <Typography variant="caption4" theme="white" component="li">
+                           Fait avec ❤️ par <CustomLink href="https://google.com" target="_blank" title="GamerBike" className="!text-white/70 hover:!text-white"/>  {currentYear}
                         </Typography>
                     </ul>
-                        <SocialNetworksButtons
+                        {/* <SocialNetworksButtons
                         theme="gray"
-                        />
+                        /> */}
                  </div>
             </Container>
         </footer>
@@ -95,10 +96,10 @@ interface footerLinkProps {
 const FooterLink = ({data}: footerLinkProps) => {
 
     const linkList = data.links.map((link) => { return (
-        <Typography variant="caption3" theme="gray" component="li" key={link.label+'id'}>
+        <Typography variant="caption3" theme="white" component="li" key={link.label+'id'}>
         {link.type === LinkType.INTERNAL ? (
-            <CustomLink href={link.baseUrl} title={link.label} className="text-white/75"/>) : (
-                <CustomLink href={link.baseUrl} target="_blank" title={link.label}  className="text-white/75"/>)}
+            <CustomLink href={link.baseUrl} title={link.label} className="!text-white/80 hover:!text-white transition"/>) : (
+                <CustomLink href={link.baseUrl} target="_blank" title={link.label}  className="!text-white/80 hover:!text-white transition"/>)}
         </Typography>)
     })
 

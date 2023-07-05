@@ -61,7 +61,7 @@ export default async function PostPage({ params }: PostProps) {
     <>
     <MenuPistes leftMenu={true}/>
         {/* <MenuPistes/> */}
-    <article id='title' className="py-6 prose mx-auto px-6">
+    <article id='title' className="py-6 prose mx-auto px-6 relative">
       <div>
         <h1 className="mb-2">{post.title}</h1>
         <a href="#pistes" aria-label="choix des pistes" className="mt-2 pb-8">
@@ -69,7 +69,7 @@ export default async function PostPage({ params }: PostProps) {
         </a>
     </div>
 
-        <div className="2xl:fixed 2xl:right-6 2xl:top-28 shadow-2xl bg-white/80 p-5 mt-4">
+        <div className="2xl:fixed 2xl:right-6 2xl:top-16 shadow-2xl bg-white/80 p-5 mt-4">
             <p className="text-2xl border-b-2">Infos Pistes: </p>
           <div className="w-full grid grid-cols-2 xl:grid-cols-1 space-y-1 gap-5">
             <p className="font-bold col-span-1 lg:col-span-2 m-0 h-5"> {post.distance} Km <GiPathDistance size={35} className="inline"/> </p>

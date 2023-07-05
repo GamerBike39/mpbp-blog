@@ -8,6 +8,7 @@ import AnimatedNumber  from '@/components/animation/AnimatedNumbers';
 import { Slider } from './Slider';
 import Image from 'next/image';
 
+
 // image
 import Logo  from "£/img/logo/logo-poupet.svg";
 import hand from '£/img/hero/hand.png'
