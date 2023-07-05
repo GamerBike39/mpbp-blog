@@ -41,8 +41,8 @@ import crampons from "£/img/svg/crampons.svg";
                         </div>
             {/* <p className='pt-3 lg:pt-8 text-right w-full text-gray-700'>Président of the Mont Poupet Bike Park</p> */}
             <div className='flex gap-5 mt-10 w-full justify-center'>
-                <Button baseUrl='#adhesion' title='adhesion' linkType='internal' variant='accent' size='small'>Adhérer</Button>
-                <Button baseUrl='#plan' title='plan des pistes' linkType='internal' size='small' variant='outline' >Plan des pistes</Button>
+                <Button baseUrl='/#asso' title='adhesion' linkType='internal' variant='accent' size='small'>Adhérer</Button>
+                <Button baseUrl='/#plan' title='plan des pistes' linkType='internal' size='small' variant='outline' >Plan des pistes</Button>
             </div>
 
             <a href="#slider" className='hidden lg:block'>
