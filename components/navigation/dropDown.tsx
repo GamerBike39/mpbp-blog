@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { motion, AnimatePresence  } from 'framer-motion';
 import MenuPistes, {MenuPistesMobile} from '@/app/pistes/components/MenuPistes';
 
+import Link from 'next/link';
+
 interface Props {
     mobileMenu?: boolean;
     action? : ()=>void;
@@ -30,9 +32,9 @@ const DropDownMenuPistes = ({mobileMenu, action}:Props) => {
     <div className={`relative z-50 h-auto`} onMouseLeave={handleMouseLeave}>
     {mobileMenu? (<p onClick={handleClick} className={`font-semibold text-lg  text-white cursor-pointer `}>
     Pistes   
-   </p>): (<p onMouseEnter={handleMouseEnter} className={`font-semibold text-lg cursor-pointer`}>
+   </p>): (<Link href='/pistes' onMouseEnter={handleMouseEnter} className={`font-bold text-lg cursor-pointer`}>
     Pistes   
-   </p>)}
+   </Link>)}
 
    <AnimatePresence>
     {isOpen && (

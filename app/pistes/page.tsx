@@ -34,7 +34,7 @@ export default function blog(){
               </div>
               <hr />
             </div>
-            <div className="px-10 w-full h-[60vh] relative mb-16 ">
+            <div className="px-10 w-full h-[60vh] relative ">
               <Image
                 src="/img/pistes/plan.webp"
                 alt="pistes"

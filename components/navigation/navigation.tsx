@@ -133,14 +133,14 @@ export const Navigation = ({}: Props) => {
           <DropDownMenuPistes/>
         </li>
         <li className="m-0">
-        <a href="#adhesion" className="font-bold">Adhérer</a>
+        <Link href="/#adhesion" className="font-bold">Adhérer</Link>
         </li>
         <li className="m-0">
-        <a href="#info">Infos</a>
+        <a href="/#info">Infos</a>
         </li>
-         <li className="m-0">
+         {/* <li className="m-0">
             <CustomLink href="/contact" title="Contact" />
-        </li>
+        </li> */}
       </ul>
       </>
     );

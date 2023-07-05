@@ -20,7 +20,7 @@ export const Slider = ({classname}:SliderProps) => {
                 rewind: true,
                 interval: 3000,
                 pauseOnHover: false,
-                arrows: false,
+                arrows: true,
                 // animation    : 'slide',
                 // lazyLoad     : 'nearby',
                 pagination: false,

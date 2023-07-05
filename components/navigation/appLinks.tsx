@@ -55,7 +55,7 @@ const footerApplicationLinks: AppLinks[] = [
  const footerInfoLinks: AppLinks[] = [
     {
         label: 'CGU',
-        baseUrl: '#',
+        baseUrl: '/cgu',
         type: 'internal'
     },
     // {
@@ -65,7 +65,7 @@ const footerApplicationLinks: AppLinks[] = [
     // },
     {
         label: 'A propos',
-        baseUrl: '#',
+        baseUrl: '/about',
         type: 'internal'
     }
 ]

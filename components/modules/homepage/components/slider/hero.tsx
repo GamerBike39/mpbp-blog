@@ -53,12 +53,12 @@ import crampons from "£/img/svg/crampons.svg";
     </div>
     </Container>
     </LargeContainer>
-    
-    <div  className='w-full grid grid-cols-10 gap-10  pt-20 mb-5 place-content-center place-items-center relative z-30'>
+    <LargeContainer>
+    <div className='w-full grid grid-cols-10 gap-10  pt-20 mb-5 place-content-center place-items-center relative z-30'>
 
     <div id='slider' className="w-fit mx-auto col-span-10">
                <Typography variant="h2" component="h2" theme="black" className="w-full text-center z-10 pb-5 beforeLine2 relative">
-               Découvrez le Bike Park du Mont Poupet
+              Le Bike Park du Mont Poupet
                </Typography>
         </div>
         <div className='col-span-10 lg:col-span-4'>
@@ -100,6 +100,7 @@ import crampons from "£/img/svg/crampons.svg";
                 <Slider classname='lg:my-5 lg:py-10 col-span-10 lg:col-span-6'/>
    
     </div>
+                </LargeContainer>
     </div>
   
    

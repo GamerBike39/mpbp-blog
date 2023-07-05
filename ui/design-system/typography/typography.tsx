@@ -26,7 +26,7 @@ export const Typography = ({
             variantStyles = "text-5xl lg:text-7xl"
             break;
         case "h2":
-            variantStyles = "text-5xl md:text-7xl"
+            variantStyles = "text-4xl md:text-7xl"
             break;
         case "h3": // default
             variantStyles = "text-3xl md:text-5xl lg:text-6xl"

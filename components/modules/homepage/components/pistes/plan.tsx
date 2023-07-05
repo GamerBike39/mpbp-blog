@@ -30,7 +30,7 @@ export const PlanPiste = () => {
                     <div className="pt-5 mt-10">
                         <div className="w-fit mx-auto">
                             <Typography variant="h2" component="h2" theme="black" className="w-fit text-center py-12 z-10 beforeLine">
-                                Plan des pistes
+                               Nos pistes
                             </Typography>
                         </div>
                             <Typography variant="lead" component="h4" className="w-fit px-10 mb-10 z-50 relative mx-auto max-w-3xl font-light text-gray-700">

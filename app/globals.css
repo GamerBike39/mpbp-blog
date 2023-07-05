@@ -181,11 +181,19 @@ iframe{
     left: -1em!important;
   }
 
-  .beforeLine::before, .beforeLine2::before{
+  .beforeLine2::before{
    display: none;
   }
 
 }
+
+@media screen and (max-width: 330px) {
+/* .splide{
+  padding-left: 10px;
+  padding-right: 10px;
+} */
+}
+
 
 
 .divider-1:after{
@@ -244,7 +252,7 @@ iframe{
 }
 .divider-big-round-bottom:after{
   content: '';
-  background-image: url(/dividers/big-round-bottom.svg);
+  background-image: url(/dividers/moutain-bottom.svg);
   width: 100%;
   height: 50px;
   position: absolute;
@@ -259,26 +267,16 @@ iframe{
 
 .divider-big-round-top:before{
   content: '';
-  background-image: url(/dividers/big-round-top.svg);
+  background-image: url(/dividers/mountain-top.svg);
   width: 100%;
   height: 50px;
   position: absolute;
   left: 0;
-  top: -20px;
+  top: 1px;
   display: block;
   object-fit: cover;
   fill: transparent;
   stroke: transparent;
   z-index: 30;
-}
-
-.page {
-  transition: 2s;
-  height: 100%;
-  opacity: 0;
-}
-
-.fadeIn {
-  opacity: 1;
 }
 
