@@ -15,8 +15,8 @@ export const HomePage = () => {
             <Heroslider />
             <InfoList />
             <PlanPiste />
-            <Adhesion />
             <Testimonial />
+            <Adhesion />
             <Partenaires />
         </>
     )
