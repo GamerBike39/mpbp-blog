@@ -58,11 +58,11 @@ const footerApplicationLinks: AppLinks[] = [
         baseUrl: '#',
         type: 'internal'
     },
-    {
-        label: 'Confidentiatlité',
-        baseUrl: '#',
-        type: 'internal'
-    },
+    // {
+    //     label: 'Confidentiatlité',
+    //     baseUrl: '#',
+    //     type: 'internal'
+    // },
     {
         label: 'A propos',
         baseUrl: '#',
@@ -93,5 +93,6 @@ export const footerLinks = [
     {
         label: 'Réseaux',
         links: footerSocialLinks
-    }
+    },
+    
 ]

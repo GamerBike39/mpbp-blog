@@ -7,7 +7,7 @@ import Image from "next/image"
 import { Metadata } from "next"
 import { Mdx } from "@/components/mdx-components"
 import MenuPistes from "../components/MenuPistes"
-
+import '@splidejs/react-splide/css';
 import {FaExchangeAlt} from 'react-icons/fa'
 import {GiPathDistance} from "react-icons/gi";
 import {BiTrendingDown, BiTimer} from "react-icons/bi";
@@ -61,7 +61,7 @@ export default async function PostPage({ params }: PostProps) {
     <>
     <MenuPistes leftMenu={true}/>
         {/* <MenuPistes/> */}
-    <article id='title' className="py-6 prose mx-auto px-6 relative">
+    <article id='title' className="py-6 mb-10 prose mx-auto px-6 relative">
       <div>
         <h1 className="mb-2">{post.title}</h1>
         <a href="#pistes" aria-label="choix des pistes" className="mt-2 pb-8">
@@ -92,7 +92,7 @@ export default async function PostPage({ params }: PostProps) {
 
       <Mdx code={post.body.code} />
     </article>
-    <div id="pistes" className="max-w-3xl mx-auto"> 
+    <div id="pistes" className="max-w-3xl mx-auto mt-20"> 
     <p className="text-2xl my-2 shadow-2xl px-2">Liste des pistes :</p>
       <GridPistes/>
     </div>
