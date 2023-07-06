@@ -35,7 +35,7 @@ import crampons from "£/img/svg/crampons.svg";
                             <Typography variant="h2" component="h1" theme="white" className="w-full mx-auto lg:w-fit text-center py-12 z-10 beforeLine font-extrabold">
                                 Le Paradis du VTT&nbsp;!
                             </Typography>
-                            <Typography variant="caption3" component="h3" theme="white" className="w-full lg:w-2/3 mx-auto text-center z-10 font-bold">
+                            <Typography variant="body-lg" component="h2" className="w-full lg:w-2/3 mx-auto text-center z-10 font-bold text-neutral-200">
                                 Venez découvrir le Mont Poupet Bike Park, un bike park unique en son genre, situé à Salins-les-Bains dans le Jura.
                             </Typography>
                         </div>
@@ -56,7 +56,7 @@ import crampons from "£/img/svg/crampons.svg";
     <LargeContainer>
     <div className='w-full grid grid-cols-10 gap-10  pt-20 mb-5 place-content-center place-items-center relative z-30'>
 
-    <div id='slider' className="w-fit mx-auto col-span-10">
+    <div id='slider' className="w-fit max-w-xs md:max-w-none mx-auto col-span-10">
                <Typography variant="h2" component="h2" theme="black" className="w-full text-center z-10 pb-5 beforeLine2 relative">
               Le Bike Park du Mont Poupet
                </Typography>
@@ -64,37 +64,37 @@ import crampons from "£/img/svg/crampons.svg";
         <div className='col-span-10 lg:col-span-4'>
             
                 <div className='w-full  my-5 '>
-                    <Typography variant='h4' className='text-center text-neutral-500'>
+                    <Typography variant='h4' component='h4' className='text-center text-neutral-500'>
                         Des chiffres incroyables
                     </Typography>
                    
                     <hr />
                 </div>
-            <div className='flexCenter gap-5 lg:gap-10 flex-wrap max-w-md mx-auto'>
-                <p className={`${styles.stat} col-span-1 font-gluten`}>
+            <div className='gap-2 lg:gap-14 lg:max-w-2xl max-w-md grid grid-cols-3'>
+            <p className={`${styles.stat} col-span-1 font-light text-neutral-600 `}>
+                        <span>+<AnimatedNumber  value={20} timeAnimation={5000}/></span>
+                    Km de trails
+                </p>
+                <p className={`${styles.stat} col-span-1 font-light text-neutral-600`}>
                     <AnimatedNumber  value={84} timeAnimation={5000}/>
                     Jumps
                 </p>
-                <p className={`${styles.stat} font-gluten`}>
+                <p className={`${styles.stat} font-light text-neutral-600`}>
                     <AnimatedNumber  value={4} timeAnimation={5000}/>
                     Drops
                 </p>
-            <p className={`${styles.stat} font-gluten`}>
+            <p className={`${styles.stat} font-light text-neutral-600`}>
                     <AnimatedNumber  value={116} timeAnimation={5000}/>
                     Appuis
                 </p>
-                <p className={`${styles.stat} col-span-1 font-gluten`}>
+                <p className={`${styles.stat} col-span-1 font-light text-neutral-600`}>
                     <AnimatedNumber  value={7} timeAnimation={5000}/>
                     River Gap
                 </p>
-                <p className={`${styles.stat} col-span-1 font-gluten`}>
+                <p className={`${styles.stat} col-span-1 font-light text-neutral-600`}>
                     <AnimatedNumber  value={96} timeAnimation={5000}/>
                     Virages relevés
-                </p>
-                <p className={`${styles.stat} font-gluten`}>
-                        <AnimatedNumber  value={1} timeAnimation={5000}/>
-                    Dalle Rocheuse
-                </p>
+                </p>               
             </div>
         </div>
                 <Slider classname='lg:my-5 lg:py-10 col-span-10 lg:col-span-6'/>

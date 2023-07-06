@@ -43,11 +43,11 @@ const MenuPistes = ({ className, leftMenu, action }: Props) => {
     // <div className={`${leftMenu ? "fixed top-10  w-max -left-2 px-10 space-y-3 hidden xl:block" : "w-max px-10 space-y-3 -translate-x-20 -translate-y-5"} 
     <div className={`${leftMenu ? "fixed top-28  w-max -left-2 px-10 space-y-3 hidden xl:block" : "w-max px-10 space-y-3"} 
     ${className}`}>
-         <Link href="/pistes" onClick={action} className="flex items-center gap-2">
-                <p className="px-5 text-sm text-neutral-800 font-bold hover:scale-105 transition">Plan</p>
+         <Link href="/pistes" onClick={action} className="flex items-center gap-2 hover:scale-105 group ">
+                <p className="px-5 text-sm text-neutral-800 font-bold group-hover:font-extrabold group-hover:bg-neutral-400/40 transition ">Plan</p>
                 <LiaMapSignsSolid />
             </Link>
-        <hr  className="text-yellow-500"/>
+        <hr/>
       {sortedPistes.map((item) => (
         <div key={item._id}>
           {item.slug === pathName ? (

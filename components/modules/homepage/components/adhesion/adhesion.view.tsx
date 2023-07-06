@@ -23,7 +23,7 @@ const Adhesion = () => {
         
         <Container>
 
-            <h3 className="max-w-xl mx-auto py-12 z-10 text-gray-600">
+            <h3 className="max-w-2xl mx-auto py-12 z-10 text-gray-600 text-xl lg:text-3xl">
                 Le Mont Poupet Bike Park est une association loi 1901. Elle a pour but de développer et d&apos;entretenir le bike park du Mont Poupet.
             </h3>
 
@@ -59,9 +59,9 @@ const Adhesion = () => {
 
             </div>
                 <hr />
-                <div className="w-fit mx-auto mt-10 mb-28 py-10">
+                <div className="w-fit mx-auto mt-2 mb-28 py-10">
                 <div className="w-fit mx-auto">
-                            <Typography variant="h2" component="h2" theme="black" className="w-fit text-center py-12 z-10 beforeLine">
+                            <Typography variant="h2" component="h2" theme="black" className="w-fit text-center py-12 mb-5 z-10 beforeLine">
                                 Shape
                             </Typography>
                         </div>
@@ -71,7 +71,7 @@ const Adhesion = () => {
                         <Image src={mathis} alt="Mathis" width={400} className='rounded'/>
                     </div>
                     <div className='col-span-2 lg:col-span-1'>
-                        <p  className="w-fit py-5 z-10 font-gluten font-light text-neutral-900">
+                        <p  className="w-fit py-5 z-10 font-gluten font-light text-neutral-900 text-xl lg:text-2xl">
                             Toi aussi tu veux devenir <span className='animate-pulse font-bold'>fort</span> comme Mathis&nbsp;?<br/> <span className="animate-pulse font-bold">Rejoins</span> l&apos;équipe de shapeurs et viens nous aider à entretenir le bike park.
                         </p>
                         <SliderShape/>

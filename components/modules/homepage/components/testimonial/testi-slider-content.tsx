@@ -18,7 +18,7 @@ export const sliderContent = [
     {
         content: "Ce qui m'a impressionné, c'est l'attention portée aux détails et à l'entretien des pistes. Les trajectoires sont bien définies, les obstacles sont bien placés et l'équipe du bike park fait un travail remarquable pour maintenir les pistes en excellent état. Cela se ressent dans la fluidité des descentes et le plaisir que l'on ressent à chaque virage.",
         img: bareli,
-        person : "Bareli",
+        person : "Yohan",
     },
     {
         content: "Waf waf ! Je suis un chien chanceux qui a la possibilité de passer du temps au Mont Poupet Bike Park, et laissez-moi vous dire que c'était vraiment wouf-tastique ! J'adore chaque instant passé là-bas. J'ai couru à travers les bois, en suivant les VTT qui dévalaient les pistes. Les woufs de joie qui s'échappaient de moi étaient incontenables !",

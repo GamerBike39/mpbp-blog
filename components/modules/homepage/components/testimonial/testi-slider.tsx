@@ -18,6 +18,7 @@ export const Slider = ({classname}:SliderProps) => {
                 padding: {
                     right: '8rem',
                     left : '8rem',
+                    top: '0rem',
                 },
                 loop: true,
                 autoplay: false,
@@ -54,14 +55,14 @@ export const Slider = ({classname}:SliderProps) => {
         >
         
             {sliderContent.map((slide, index) => (
-                <SplideSlide key={index} className='flex flex-col items-center border-2 border-gray-600/10 shadow-xl p-10 bg-neutral-100'> 
+                <SplideSlide key={index} className='flex flex-col items-center border-2 border-gray-600/10 shadow-xl p-10 bg-neutral-50 hover:bg-neutral-200/50 transition group'> 
                         <div className='relative w-40 h-40 min-h-max'>
-                            <Image src={slide.img} alt={slide.person} fill  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" loading="lazy" placeholder='blur' className='rounded-full'/>
+                            <Image src={slide.img} alt={slide.person} fill  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" loading="lazy" placeholder='blur' className='object-cover rounded-full group-hover:scale-110 transition'/>
                         </div>
-                    <Typography variant="body-lg" component='p' theme='black' className="text-center z-10 font-light font-gluten mb-5 mt-3">
+                    <Typography variant="body-lg" component='p' theme='black' className="text-center z-10 font-bold text-yellow-600 mb-5 mt-3 border-b-4">
                         {slide.person}
                     </Typography>
-                    <Typography variant="caption3" component='p' theme='gray' className="z-10 font-light font-gluten mb-5 min-h-96">
+                    <Typography variant="caption3" component='p' theme='gray' className="z-10 font-light mb-5 min-h-96">
                         {slide.content}
                     </Typography>
                 </SplideSlide>

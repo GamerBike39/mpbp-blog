@@ -38,7 +38,7 @@ const DropDownMenuPistes = ({mobileMenu, action}:Props) => {
 
    <AnimatePresence>
     {isOpen && (
-        <motion.div className={`${mobileMenu? "fixed top-0 left-0 w-screen z-[5000]" : "absolute top-6 -left-20 "}`}
+        <motion.div className={`${mobileMenu? "fixed top-0 left-0 w-screen z-[5000]" : "absolute top-7 -left-20 "}`}
           initial={{  opacity: 0,x:0}}
           exit={{ opacity: 0,}}
           animate={{ opacity: 1}}

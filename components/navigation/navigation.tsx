@@ -94,7 +94,7 @@ export const Navigation = ({}: Props) => {
                whileInView={{ opacity: 1, y:0, transition: { duration: 0.4, delay: 0.4 } }}
                onClick={toggleMobileMenu}
               >
-                  <a href="#adhesion" title="Contact" className="!text-white">
+                  <a href="/#asso" title="association" className="!text-white">
                     Association
                   </a>
 
@@ -126,16 +126,16 @@ export const Navigation = ({}: Props) => {
       <ul key={"desk_menu"} className={`hidden md:flex items-center gap-7 m-0 px-4 py-2 backdrop-blur-md bg-white/50 rounded`}>
         <li>
         </li>
-        <li className="m-0">
+        <li className="m-0 hover:scale-105">
             <Link href="/" >Accueil</Link>
         </li>
         <li>
           <DropDownMenuPistes/>
         </li>
-        <li className="m-0">
+        <li className="m-0 hover:scale-105">
         <Link href="/#adhesion" className="font-bold">Adhérer</Link>
         </li>
-        <li className="m-0">
+        <li className="m-0 hover:scale-105">
         <a href="/#info">Infos</a>
         </li>
          {/* <li className="m-0">
