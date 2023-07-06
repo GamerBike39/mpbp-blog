@@ -1,12 +1,13 @@
 
 import "./globals.css"
-import { Nunito } from "next/font/google"
+import { Nunito} from "next/font/google"
 import { Navigation } from "@/components/navigation/navigation"
 import { Footer } from "@/components/navigation/footer"
 import Head from "next/head"
 
 
 const inter = Nunito({ subsets: ["latin"] })
+
 
 export const metadata = {
   title: "Mont Poupet Bike Park",
