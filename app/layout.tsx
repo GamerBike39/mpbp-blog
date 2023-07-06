@@ -6,7 +6,9 @@ import { Footer } from "@/components/navigation/footer"
 import Head from "next/head"
 
 
-const inter = Nunito({ subsets: ["latin"] })
+const nunito = Nunito({ subsets: ["latin"],
+variable: '--font-nunito',
+})
 
 
 export const metadata = {
@@ -65,7 +67,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
       </Head>
       <body
-        className={`antialiased min-h-screen bg-white text-slate-900  ${inter.className}`}
+        className={`antialiased min-h-screen bg-white text-slate-900`}
       >
           <div className="mx-auto">
             <Navigation />

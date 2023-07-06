@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-h1, h2, h3, h4, h5, h6{
-  font-family: var(--font-lucky);
-}
-
 a{
   text-decoration: none;
   color: rgb(73, 73, 73)!important;
@@ -141,6 +137,11 @@ iframe{
   }
 }
 
+@media screen and (max-width: 900px) {
+  .beforeLine2::before{
+    display: none;
+   }
+}
 @media screen and (max-width: 768px) {
   .splide__arrow--next{
     right: -1em!important;
@@ -149,17 +150,14 @@ iframe{
     left: -1em!important;
   }
 
-  .beforeLine2::before{
-   display: none;
-  }
+ 
 
 }
 
 @media screen and (max-width: 330px) {
-/* .splide{
-  padding-left: 10px;
-  padding-right: 10px;
-} */
+.mini{
+ scale: 0.8;
+}
 }
 
 
