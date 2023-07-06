@@ -16,7 +16,7 @@ export const metadata = {
     title: 'Mont Poupet Bike Park',
     description: 'Venez découvrir le Mont Poupet Bike Park, un bike park enduro situé dans le Jura, à Salins-les-Bains.',
     creator: '@GamerBike39',
-    images: ['/metaimg.jpg'],
+    images: ['https://media.discordapp.net/attachments/1041748300510003202/1126456355713187840/metaImg.jpg?width=1140&height=625'],
   },
   openGraph: {
     type: 'website',
@@ -25,7 +25,7 @@ export const metadata = {
     description: 'Venez découvrir le Mont Poupet Bike Park, un bike park enduro situé dans le Jura, à Salins-les-Bains.',
     images: [
       {
-        url: '/metaimg.jpg',
+        url: 'https://media.discordapp.net/attachments/1041748300510003202/1126456355713187840/metaImg.jpg?width=1140&height=625',
         width: 800,
         height: 600,
         alt: 'Mont Poupet Bike Park',
