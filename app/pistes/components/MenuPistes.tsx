@@ -99,15 +99,21 @@ export const MenuPistesMobile = ({ className, action, closeMenu}: Props) => {
             <div key={item._id}>
               {item.slug === pathName ? (
                 <>
-                  <Link href={item.slug} onClick={action}>
+                  <Link href={item.slug} onClick={action} className="flex items-center gap-2">
                     <p className="text-xl font-bold hover:scale-105 bg-neutral-800 px-5 text-white transition">{item.title}</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="white" viewBox="0 0 24 24" stroke="currentColor">
+                  <circle cx="12" cy="12" r="5" fill={item.colorDifficulty} />
+                </svg>
                   </Link>
                   <hr />
                 </>
               ) : (
                 <>
-                  <Link href={item.slug} onClick={action}>
+                  <Link href={item.slug} onClick={action} className="flex items-center gape-2">
                     <p className="text-sm hover:scale-105 transition hover:font-extrabold hover:bg-neutral-400/40  ">{item.title}</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="white" viewBox="0 0 24 24" stroke="currentColor">
+                  <circle cx="12" cy="12" r="5" fill={item.colorDifficulty} />
+                </svg>
                   </Link>
                   <hr />
                 </>
