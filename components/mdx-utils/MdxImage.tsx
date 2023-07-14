@@ -42,7 +42,7 @@ const MdxImage: FC<MdxImageProps> = ({ src, desc, className }) => {
    >
       <figure>
        <Image ref={ref} src={src} alt="image" fill priority placeholder='empty' sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw" className='object-cover w-full h-full'/>
-       {desc ? <figcaption className='rounded-md px-4 py-2 w-1/3 text-lg font-semibold text-white bg-neutral-200/25 absolute -bottom-0'>{desc}</figcaption> : null}
+       {desc ? <figcaption className='rounded-md px-4 py-2 w-full text-lg font-semibold text-white bg-neutral-200/25 absolute -bottom-0'>{desc}</figcaption> : null}
        </figure>
    </motion.div>
     </>
