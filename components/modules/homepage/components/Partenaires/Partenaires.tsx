@@ -9,7 +9,7 @@ export const Partenaires = () => {
     const partnerList = partnerContent.map((partner, index) => {
         return (
             <div key={index} className="col-span-4 md:col-span-1 rounded hover:scale-110 hover:-rotate-6 hover:shadow-2xl transition">
-                <Link href={partner.link}>
+                <Link href={partner.link} target="_blank">
                 <Image src={partner.logo} alt={partner.link} width={200} height={200}  className="rounded shadow-xl"/>
                 </Link>
             </div>
