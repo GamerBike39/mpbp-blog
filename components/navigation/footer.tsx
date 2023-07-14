@@ -78,7 +78,7 @@ export const Footer = ({} : Props) => {
                 <div className="flex justify-between items-center">
                     <ul>
                         <Typography variant="caption4" theme="white" component="li">
-                           Fait avec ❤️ par <CustomLink href="https://google.com" target="_blank" title="GamerBike" className="!text-white/70 hover:!text-white"/>  {currentYear}
+                           Fait avec ❤️ par <CustomLink href="https://github.com/GamerBike39" target="_blank" title="GamerBike" className="!text-white/70 hover:!text-white"/>  {currentYear}
                         </Typography>
                     </ul>
                         {/* <SocialNetworksButtons
