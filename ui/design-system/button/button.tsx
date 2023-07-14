@@ -49,7 +49,7 @@ export  const Button = ({
                     variantStyles = "bg-green-600/90  hover:bg-green-400 text-neutral-100 rounded "
                     break;
                 case "secondary":
-                    variantStyles = "bg-red-200 hover:bg-primary-300/50 text-primary rounded"
+                    variantStyles = "bg-white hover:bg-neutral-400/50 text-primary rounded"
                     break;
                 case "outline":
                     variantStyles = "bg-white hover:bg-gray-800 hover:text-neutral-100 border border-gray-500 text-gray-900 rounded "
@@ -64,7 +64,7 @@ export  const Button = ({
                     if (iconTheme === "accent") {
                         variantStyles = "bg-black hover:bg-primary-400 text-white rounded-full"
                     } else if (iconTheme === "secondary") {
-                        variantStyles = "bg-red-200 hover:bg-primary-300/50 text-primary rounded-full"
+                        variantStyles = "bg-neutral-200 hover:bg-neutral-100 text-primary rounded-full"
                     } else if (iconTheme === "gray") {
                         variantStyles = "bg-red-800 hover:bg-gray-700 text-white rounded-full"
                     }

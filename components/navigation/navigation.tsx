@@ -47,6 +47,10 @@ export const Navigation = ({}: Props) => {
     }
   }, [isScrollLocked]);
 
+  const onTopWindow = () => {
+    return window.scrollTo(0, 0);
+  };
+
   const menuMobile = () => {
     return (
           <motion.div
@@ -120,23 +124,23 @@ export const Navigation = ({}: Props) => {
   const menuDesk = () => {
     return (
       <>
-      <Link href="/" className="absolute left-3 top-3 hidden lg:block">
+      <Link href="/" className="absolute left-3 top-3 hidden lg:block" onClick={onTopWindow}>
        <Logo className="fill-white " size="large"/>
       </Link>
       <ul key={"desk_menu"} className={`hidden md:flex items-center gap-7 m-0 px-4 py-2 backdrop-blur-md bg-white/50 rounded`}>
         <li>
         </li>
         <li className="m-0 hover:scale-105">
-            <Link href="/" >Accueil</Link>
+            <a href="/" className="font-bold" onClick={onTopWindow} >Accueil</a>
         </li>
         <li>
           <DropDownMenuPistes/>
         </li>
         <li className="m-0 hover:scale-105">
-        <Link href="/#adhesion" className="font-bold">Adhérer</Link>
+        <Link href="/#asso" className="font-bold">Adhérer</Link>
         </li>
-        <li className="m-0 hover:scale-105">
-        <a href="/#info">Infos</a>
+        <li className="m-0 hover:scale-105 font-bold">
+        <Link href="/#info" className="font-bold">Infos</Link>
         </li>
          {/* <li className="m-0">
             <CustomLink href="/contact" title="Contact" />

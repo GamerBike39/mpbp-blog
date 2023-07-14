@@ -13,7 +13,7 @@ const MdxSlider = ({ classname, slides }: SliderProps) => {
     return (
         <Splide
             aria-label="Mes images préférées"
-            className={`w-full relative justify-center items-center ${classname}`}
+            className={`w-full flex relative justify-center items-center ${classname}`}
             options={{
                 type: 'fade',
                 gap: '1rem',
@@ -51,7 +51,7 @@ export default MdxSlider;
 
 // ******utilisation******
 
-// <Slider 
+// <MdxSlider 
 // classname="votre-classe-personnalisée"
 // slides={[
 //     { img: 'chemin/vers/image1.jpg', title: 'Titre 1' },

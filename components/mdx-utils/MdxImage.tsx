@@ -40,8 +40,10 @@ const MdxImage: FC<MdxImageProps> = ({ src, desc, className }) => {
     initial="hidden"
     animate={isInView ? "visible" : "hidden"}
    >
+      <figure>
        <Image ref={ref} src={src} alt="image" fill priority placeholder='empty' sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 80vw" className='object-cover w-full h-full'/>
-       <p className='my-10 pb-2 text-neutral-700'>{desc}</p>
+       {desc ? <figcaption className='rounded-md px-4 py-2 w-1/3 text-lg font-semibold text-white bg-neutral-200/25 absolute -bottom-0'>{desc}</figcaption> : null}
+       </figure>
    </motion.div>
     </>
    );

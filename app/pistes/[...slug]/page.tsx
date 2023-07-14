@@ -61,7 +61,7 @@ export default async function PostPage({ params }: PostProps) {
     <>
     <MenuPistes leftMenu={true}/>
         {/* <MenuPistes/> */}
-    <article id='title' className="py-6 mb-10 prose mx-auto px-6 relative">
+    <article id='title' className="py-6 mb-10 prose lg:prose-lg mx-auto px-6 relative">
       <div>
         <h1 className="mb-2">{post.title}</h1>
         <a href="#pistes" aria-label="choix des pistes" className="mt-2 pb-8">
