@@ -1,7 +1,4 @@
-# Next.js + Contentlayer
+# Site de l'assoication Mont Poupet Bike Park
 
-A template with Next.js 13 app dir, Contentlayer, Tailwind CSS and dark mode.
-
-https://next-contentlayer.vercel.app
-
+NextJS, Typescript, Tailwind, MDX
 
